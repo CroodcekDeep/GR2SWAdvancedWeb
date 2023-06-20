@@ -1,0 +1,62 @@
+/* Estilo del header */
+header {
+    background-color: #F0F8FF;
+    text-align: center;
+}
+
+
+/* Estilo de la tarjeta del empleado principal*/
+.employee-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 20%;
+}
+
+.employee-image {
+    width: 100px;
+    height: 200px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+/* Estilo de la sección de la lista de empleados*/
+.employee-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.employee-list .employee-card {
+    margin: 10px;
+}
+
+/* Estilo común para la imagen, nombre y título de los empleados*/
+.employee-image {
+    width: 200px;
+    text-align: center;
+}

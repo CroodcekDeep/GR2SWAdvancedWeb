@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee of the Month</title>
+</head>
+
+<body>
+    <header>
+        <h1>Employee of the Month</h1>
+    </header>
+    <!-- Random Employee -->
+    <div class="employee-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/4794/4794936.png" alt="Empleado del mes"
+            class="employee-image">
+        <h3>Nombre y Apellido:</h3>
+        <p *ngIf="randomEmployee">{{randomEmployee.firstName}} {{randomEmployee.lastName}}</p>
+        <h3>Título Profesional:</h3>
+        <p *ngIf="randomEmployee">{{randomEmployee.jobTitle}}</p>
+        <button class="btn" (click)="getRandomEmployee()">Seleccionar</button>
+    </div>
+
+    <hr>
+    <!-- List of Employees -->
+    <div class="employee-list">
+        <div class="employee-card" *ngFor="let employee of listEmployees">
+            <img src="https://cdn-icons-png.flaticon.com/512/4794/4794936.png" alt="Empleado" class="employee-image">
+            <h3>Nombre y Apellido:</h3>
+            <p>{{employee.firstName}} {{employee.lastName}}</p>
+            <h4>Título Profesional:</h4>
+            <p>{{employee.jobTitle}}</p>
+        </div>
+    </div>
+</body>
+
+</html>
